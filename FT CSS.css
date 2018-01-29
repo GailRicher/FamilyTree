@@ -1,0 +1,190 @@
+body{width:960px;
+    height:1060px;
+    margin: 0 auto;
+    }
+
+p  {font-family: Arial, Helvetica, sans-serif;
+    } 
+
+li {list-style-type: none;
+    float: right;
+    margin: -11px 20px 5px 10px;
+    font-size: 15px;
+    }
+li > a{color: white;
+/*    border: 2px solid white;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    }    
+li:hover{background-color: red;
+    }
+
+#nav{width:950px;
+    height:63.60px;
+    background-color: rgb(81, 21, 21);
+    position: fixed; 
+    padding-right: 10px;
+    }
+
+#header{width:960px;
+    height:63.60px;
+    float: left; 
+    }
+ 
+#main{width:100%;
+    height:88%;
+    background-color:lightgrey;
+    float: left;
+    }
+
+#Tree{
+    width:570px;
+    height:570px;
+    border-radius: 0%;
+    float:left;
+    clear: both;
+    margin: 18% 0px 0px 21%;
+    }
+#Knipe {
+/*  animation-iteration-count: infinite; */
+/*  cursor: crosshair;                   */    animation-name: Knipe;
+/*  margin: 182px 0px 0px -335px;        */    
+    animation-name: Knipe;
+    animation-duration: 3s ;
+    animation-iteration-count: 2;
+    color: red;
+    font-weight: bolder;
+    margin: 19% 0px 0px -35%;
+/*  down top, in right, up bottom, in left */
+    float: left;
+    }
+#Richer {
+    animation-name: Richer;
+    animation-duration: 4s ;
+    animation-iteration-count: 3;
+    color: red;
+    font-weight: bolder;
+    margin: 26% 0px 0px -45%;
+    float: left;    
+    }
+#Green {
+    animation-name: Green;
+    animation-duration: 3s ;
+    animation-iteration-count: 3;
+    color: red;
+    font-weight: bolder;
+    margin: 28% 0px 0px -35%;
+    float: left;
+    }
+#footer{
+    width:100%;
+    height:6%;
+    background-color:rgb(81, 21, 21);
+    float: left;
+    text-align:center;
+    }
+#footer > p{color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    }
+    
+    
+/*Key Frame*/
+@keyframes Green 
+    {00.0%{font-size: 25px;}
+    20.0%{font-size: 5px;}
+    40.0%{font-size: 25px;}
+    60.0%{font-size: 10px;}
+    80.0%{font-size: 5px;}
+    100.%{font-size: 25px;}
+    }
+@keyframes Knipe 
+    {00.0%{font-size: 25px;}
+    20.0%{font-size: 5px;}
+    40.0%{font-size: 25px;}
+    60.0%{font-size: 10px;}
+    80.0%{font-size: 5px;}
+    100.%{font-size: 25px;}
+    }
+@keyframes Richer 
+    {00.0%{font-size: 25px;}
+    20.0%{font-size: 5px;}
+    40.0%{font-size: 25px;}
+    60.0%{font-size: 10px;}
+    80.0%{font-size: 5px;}
+    100.%{font-size: 25px;}
+    }
+
+/* Media for Tablet*/
+@media (max-width: 800px) 
+{
+    body{font-size: 4vw;
+        width: 600px;
+        height:auto;
+    }
+    #nav{width:590px;
+        height:53.60px;
+        background-color: rgb(81, 21, 21);
+        position: fixed;
+        font-size: 60%; 
+        padding-right: 10px;
+        }
+    
+    #header{width:600px;
+        height:53.60px;
+        float: left; 
+        }
+     
+    #main{width:100%;
+        height:88%;
+        background-color:lightgrey;
+        float: left;
+        }
+    
+    #Tree{
+        width:320px;
+        height:320px;
+        border-radius: 0%;
+        float:left;
+        clear: both;
+        margin: 30% 0px 0px 24%;
+        }
+    #Knipe {
+        animation-name: Knipe;
+        animation-duration: 3s ;
+        animation-iteration-count: 2;
+        color: red;
+        font-weight: bolder;
+        font-size: 60%;
+        margin: 29% 0px 0px -32%;
+        }
+    #Richer {
+        animation-name: Richer;
+        animation-duration: 5s ;
+        animation-iteration-count: 3;
+        color: red;
+        font-weight: bolder;
+        font-size: 60%;
+        margin: 36% 0px 0px -42%;
+        }
+    #Green {
+        animation-name: Green;
+        animation-duration: 3s ;
+        animation-iteration-count: 3;
+        cursor: crosshair;
+        color: red;
+        font-weight: bolder;
+        font-size: 60%;
+        margin: 38% 0px 0px -33%;
+        }
+
+    #footer{
+        width:100%;
+        height:6%;
+        background-color:rgb(81, 21, 21);
+        float: left;
+        text-align:center;
+        font-size: 70%;
+        }
+}
+
